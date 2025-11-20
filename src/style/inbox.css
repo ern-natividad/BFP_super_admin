@@ -1,0 +1,95 @@
+
+.inbox-container {
+  display: flex;
+  height: 100vh;
+  background: #f5f5f5;
+  border-radius: 20px;
+  border: 2px solid #000000;
+  overflow: hidden;
+}
+
+.left-panel {
+  width: 30%;
+  background: #ffffff;
+  border-right: 2px solid #000000;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-title {
+  background: #970000;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid #000000;
+}
+
+.panel-title h3{
+  color: #ffffff; 
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.conversation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.conversation-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.conversation-item:hover {
+  background: #f4f7ff;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.preview {
+  font-size: 13px;
+  color: #666;
+  margin-top: 3px;
+}
+
+.right-panel {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+}
+
+.report-header {
+  padding: 19px;
+  background: #af0000;
+  border-bottom: 2px solid #000000;
+}
+
+.report-header h2 {
+  color: #f4f7ff;
+  margin-bottom: 12px;
+}
+
+.report-content {
+  padding: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+}

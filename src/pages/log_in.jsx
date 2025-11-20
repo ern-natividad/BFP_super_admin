@@ -44,12 +44,14 @@ const LogIn = () => {
           </div>
 
           <div>
+            <Link to="/dashboard" className="dashboard-link">
             <button 
               type="submit"
               className="login-button"
             >
               Log In
             </button>
+            </Link>
           </div>
         </div>
         

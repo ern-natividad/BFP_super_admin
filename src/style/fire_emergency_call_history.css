@@ -1,0 +1,91 @@
+.call-history-page {
+  position: relative;
+}
+
+.top-right-profile {
+  position: absolute;
+  right: 28px;
+  top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notif {
+  background: #fff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.profile .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.profile .name {
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.page-title {
+  color: #a61d1d;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.search-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.searchbox {
+  background: #fff;
+  border-radius: 20px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  width: 320px;
+}
+
+.searchbox input {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+}
+
+.table-wrap {
+  margin-top: 18px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #d6a3a3;
+  overflow: hidden;
+}
+
+.calls-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calls-table thead tr {
+  background: #a61d1d;
+  color: white;
+}
+
+.calls-table th, .calls-table td {
+  padding: 14px 16px;
+  text-align: center;
+}
+
+.btn-details {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
