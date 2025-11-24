@@ -18,30 +18,40 @@ export default function Inbox() {
   ];
 
   return (
-    <div className="inbox-container">
-      <div className="left-panel">
-        <div className="panel-title">
-            <h3>Inbox</h3>
+    <div className="Main">
+      <div className="top-right">
+          <button className="notif-btn">🔔</button>
+          <div className="user-pill">
+            <div className="user-avatar" />
+            <span className="user-name">shane</span>
+          </div>
         </div>
-        <ul className="conversation-list">
-          {conversations.map((item) => (
-            <li key={item.id} className="conversation-item">
-              <img src={item.avatar} alt={item.name} className="avatar" />
-              <div>
-                <p className="name">{item.name}</p>
-                <p className="preview">{item.preview}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+        
+      <div className="inbox-container">
+        <div className="left-panel">
+          <div className="panel-title">
+              <h3>Inbox</h3>
+          </div>
+          <ul className="conversation-list">
+            {conversations.map((item) => (
+              <li key={item.id} className="conversation-item">
+                <img src={item.avatar} alt={item.name} className="avatar" />
+                <div>
+                  <p className="name">{item.name}</p>
+                  <p className="preview">{item.preview}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-      <div className="right-panel">
-        <div className="report-header">
-          <h2>Report Details</h2>
-        </div>
-        <div className="report-content">
-          <p>Select a station on the left to view detailed reports.</p>
+        <div className="right-panel">
+          <div className="report-header">
+            <h2>Report Details</h2>
+          </div>
+          <div className="report-content">
+            <p>Select a station on the left to view detailed reports.</p>
+          </div>
         </div>
       </div>
     </div>

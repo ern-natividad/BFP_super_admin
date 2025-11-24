@@ -65,6 +65,7 @@ body {
 /* --- Input Group Styling --- */
 .form-group {
     display: flex;
+    width: 300px;
     flex-direction: column;
 }
 

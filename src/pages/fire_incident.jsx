@@ -4,7 +4,6 @@ import "../style/fire_incident.css";
 export default function FireIncident() {
   return (
     <div className="fire-incident-container">
-      
       <div className="top-info-card">
         <div>
           <p className="label">Date</p>

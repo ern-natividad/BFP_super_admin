@@ -3,18 +3,18 @@ import "../style/fireOfficerHistory.css";
 
 export default function FireOfficerHistory() {
   const rows = [
-    { name: "Juan Dela Cruz", position: "Fire Officer II", time: "08:31 AM", date: "2025-10-23" },
-    { name: "Mark Santos", position: "Fire Officer I", time: "09:12 AM", date: "2025-10-23" },
-    { name: "Rico Malinao", position: "Captain", time: "07:58 AM", date: "2025-10-23" },
+    { name: "Juan Dela Cruz", time: "08:31 AM", date: "2025-10-23", status: "Offline" },
+    { name: "Mark Santos", time: "09:12 AM", date: "2025-10-23", status: "Offline" },
+    { name: "Rico Malinao", time: "07:58 AM", date: "2025-10-23", status: "Offline" },
   ];
 
   return (
     <div className="history-page">
-      <div className="top-right-profile">
-        <div className="notif">🔔</div>
-        <div className="profile">
-          <div className="avatar" />
-          <span className="name">shane</span>
+      <div className="top-right">
+        <button className="notif-btn">🔔</button>
+        <div className="user-pill">
+          <div className="user-avatar" />
+          <span className="user-name">shane</span>
         </div>
       </div>
 
@@ -22,10 +22,9 @@ export default function FireOfficerHistory() {
 
       <div className="search-row">
         <div className="searchbox">
-          <span>🔍</span>
           <input placeholder="Search" />
         </div>
-        <button className="filter">⚙</button>
+        <button className="filter">⚙️</button>
       </div>
 
       <div className="table-wrap">
@@ -33,9 +32,9 @@ export default function FireOfficerHistory() {
           <thead>
             <tr>
               <th>NAME</th>
-              <th>POSITION</th>
               <th>TIME LOGGED-IN</th>
               <th>DATE</th>
+              <th>STATUS</th>
               <th></th>
             </tr>
           </thead>
@@ -43,10 +42,9 @@ export default function FireOfficerHistory() {
             {rows.map((r, i) => (
               <tr key={i}>
                 <td>{r.name}</td>
-                <td>{r.position}</td>
                 <td>{r.time}</td>
                 <td>{r.date}</td>
-                <td><button className="btn-details">View More Details</button></td>
+                <td>{r.status}</td>
               </tr>
             ))}
           </tbody>

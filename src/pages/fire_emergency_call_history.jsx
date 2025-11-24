@@ -9,11 +9,11 @@ export default function FireEmergencyCallHistory() {
 
   return (
     <div className="call-history-page">
-      <div className="top-right-profile">
-        <div className="notif">🔔</div>
-        <div className="profile">
-          <div className="avatar" />
-          <span className="name">shane</span>
+      <div className="top-right">
+        <button className="notif-btn">🔔</button>
+        <div className="user-pill">
+          <div className="user-avatar" />
+          <span className="user-name">shane</span>
         </div>
       </div>
 
@@ -21,10 +21,9 @@ export default function FireEmergencyCallHistory() {
 
       <div className="search-row">
         <div className="searchbox">
-          <span>🔍</span>
           <input placeholder="Search" />
         </div>
-        <button className="filter">⚙</button>
+        <button className="filter">⚙️</button>
       </div>
 
       <div className="table-wrap">
@@ -45,7 +44,6 @@ export default function FireEmergencyCallHistory() {
                 <td>{r.type}</td>
                 <td>{r.time}</td>
                 <td>{r.date}</td>
-                <td><button className="btn-details">View More Details</button></td>
               </tr>
             ))}
           </tbody>
