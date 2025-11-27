@@ -1,0 +1,14 @@
+.layout-root {
+  display: flex;
+  min-height: 100vh;
+}
+
+.layout-main {
+  margin-left: 230px; 
+  padding: 28px;
+  width: calc(100% - 230px);
+  background: #f3f3f7;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow-y: auto;
+}
