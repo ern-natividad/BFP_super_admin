@@ -3,10 +3,10 @@
 =========================== */
 .topnav {
   height: 65px;
-  background: #ffffff;
-  border-bottom: 1px solid #939393;
+  background: linear-gradient(135deg, #611414, #881b1b, #B22222); 
+  border-bottom: 1px solid #707070;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 0 25px;
   position: sticky;
@@ -14,155 +14,6 @@
   z-index: 50;
   font-family: "Poppins", sans-serif;
   
-}
-
-/* LEFT SIDE */
-.topnav-left {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.topnav-title {
-  font-size: 20px;
-  font-weight: 700;
-  color: #222;
-  margin: 0;
-}
-
-/* ===========================
-   STATUS CHIP
-=========================== */
-.status-chip {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 13px;
-}
-
-.status-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.readiness-percentage {
-  font-size: 11px;
-  opacity: 0.8;
-  margin-left: 4px;
-}
-
-.sub-branches-indicator {
-  margin-top: 4px;
-}
-
-.branches-count {
-  font-size: 11px;
-  color: #666;
-  font-weight: 500;
-}
-
-/* Warning styles for checklist not updated */
-.status-chip.not-updated {
-  border: 2px solid #ff9d9d;
-  animation: pulse-warning 2s infinite;
-}
-
-.warning-text {
-  margin-left: 4px;
-  font-size: 12px;
-}
-
-.status-warning {
-  margin-top: 4px;
-  font-size: 10px;
-  color: #ff6b6b;
-  font-weight: 600;
-  text-align: center;
-  animation: fade-in 0.5s ease;
-}
-
-.notif-item.warning {
-  background: #fff0f0;
-  border-left: 3px solid #ff9d9d;
-}
-
-.notif-item.warning .notif-title {
-  color: #ff6b6b;
-  font-weight: 600;
-}
-
-@keyframes pulse-warning {
-  0%, 100% { 
-    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.3);
-  }
-  50% { 
-    box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.1);
-  }
-}
-
-@keyframes fade-in {
-  from { opacity: 0; transform: translateY(-5px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.status-chip.ready {
-  background: #f0f9f0;
-  color: #4a7c4a;
-}
-
-.status-chip.ready .status-dot {
-  background: #4a7c4a;
-}
-
-.status-chip.not-ready {
-  background: #f8f9fa;
-  color: #6c757d;
-}
-
-.status-chip.not-ready .status-dot {
-  background: #6c757d;
-}
-
-.status-chip.partially-ready {
-  background: #fff8e6;
-  color: #8b7355;
-}
-
-.status-chip.partially-ready .status-dot {
-  background: #8b7355;
-}
-
-.status-chip.standby {
-  background: #fff4d6;
-  color: #b55c00;
-}
-
-.status-chip.standby .status-dot {
-  background: #b55c00;
-}
-
-.status-chip.deployed {
-  background: #ffe6e6;
-  color: #d10000;
-}
-
-.status-chip.deployed .status-dot {
-  background: #d10000;
-}
-
-.status-chip.emergency {
-  background: #ffcccc;
-  color: #cc0000;
-  animation: pulse 1s infinite;
-}
-
-.status-chip.emergency .status-dot {
-  background: #cc0000;
-  animation: pulse 1s infinite;
 }
 
 /* ===========================
@@ -189,7 +40,7 @@
 }
 
 .notif-btn:hover {
-  color: #000;
+  color: #af0d0d;
 }
 
 /* ===========================
@@ -292,7 +143,7 @@
   right: 5px;
   width: 9px;
   height: 9px;
-  background: #ff9d9d;
+  background: #0cda17;
   border-radius: 50%;
   animation: pulse 1.2s infinite ease-in-out;
 }

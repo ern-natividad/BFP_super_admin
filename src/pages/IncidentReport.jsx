@@ -146,10 +146,16 @@ export default function IncidentReport() {
               value={formData.alarmLevel}
               onChange={handleInputChange}
             >
-              <option value="Alarm 0 — Normal">Alarm 0 — Normal</option>
-              <option value="Alarm 1">Alarm 1</option>
-              <option value="Alarm 2">Alarm 2</option>
-              <option value="Alarm 3">Alarm 3</option>
+              <option value="1st Alarm">1st Alarm</option>
+              <option value="2nd Alarm">2nd Alarm</option>
+              <option value="3rd Alarm">3rd Alarm</option>
+              <option value="4th Alarm">4th Alarm</option>
+              <option value="5th Alarm">5th Alarm</option>
+              <option value="Task Force Alpha">Task Force Alpha</option>
+              <option value="Task Force Beta">Task Force Beta</option>
+              <option value="Task Force Charlie">Task Force Charlie</option>
+              <option value="Task Force Delta">Task Force Delta</option>
+              <option value=">General Alarm">General Alarm</option>
             </select>
           </div>
 

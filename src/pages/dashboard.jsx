@@ -52,6 +52,32 @@ export default function Dashboard() {
           </div>
         </div>
 
+        {/* CARD 4 */}
+        <div className="stat-card">
+          <div className="stat-left">
+            <h2>39</h2>
+            <p>Reports From Sub-Stations</p>
+            <span>This Month</span>
+          </div>
+
+          <div className="stat-icon">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+        </div>
+
+        {/* CARD 5 */}
+        <div className="stat-card">
+          <div className="stat-left">
+            <h2>8</h2>
+            <p>Online Officers</p>
+            <span>Now</span>
+          </div>
+
+          <div className="stat-icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+
       </div>
 
       {/* MAIN GRID */}
@@ -61,11 +87,6 @@ export default function Dashboard() {
         <div className="left-analytics">
           <div className="chart-card">
             <h3>Fire Incident Trend</h3>
-            <div className="chart-placeholder">Chart here</div>
-          </div>
-
-          <div className="chart-card">
-            <h3>Severity Breakdown</h3>
             <div className="chart-placeholder">Chart here</div>
           </div>
         </div>

@@ -52,13 +52,13 @@
 
 /* HOVER EFFECT */
 .nav-item:hover {
-  background: rgba(44, 62, 80, 0.3);
+  background: #b222224d;
   color: #ffffff;
 }
 
 /* ACTIVE PAGE */
 .nav-item.active {
-  background: #2c3e50;
+  background: #911c1c;
   color: white;
   font-weight: 600;
 }
@@ -95,7 +95,7 @@
 }
 
 .logout-btn:hover {
-  background: #2c3e50;
+  background: #B22222;
 }
 
 

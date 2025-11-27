@@ -16,10 +16,6 @@ export default function Login() {
   const validateForm = () => {
     const newErrors = {};
     
-    if (!formData.substation) {
-      newErrors.substation = "Substation is required";
-    }
-    
     if (!formData.idNumber.trim()) {
       newErrors.idNumber = "ID Number is required";
     } else if (!/^BFP-\d{5,}$/.test(formData.idNumber)) {
@@ -92,13 +88,12 @@ export default function Login() {
     <div className="login-container">
       <div className="login-left">
         <div className="login-left-content">
-          <h1 className="login-left-title">Welcome back to BFP Admin Portal</h1>
+          <h1 className="login-left-title">Welcome back to BFP Super Admin Portal</h1>
           <p className="login-left-subtitle">Secure access to fire incident management system</p>
           
           <div className="login-features">
             <h3>How does it work?</h3>
             <ul>
-              <li>Select your BFP substation</li>
               <li>Enter your ID number and password</li>
               <li>Access your dashboard instantly</li>
             </ul>
@@ -124,22 +119,6 @@ export default function Login() {
           )}
 
           <form onSubmit={handleLogin}>
-
-            <div className="auth-group">
-              <label>BFP Substation</label>
-              <select 
-                name="substation"
-                value={formData.substation}
-                onChange={handleInputChange}
-                className={errors.substation ? "error" : ""}
-              >
-                <option value="">Select Substation</option>
-                <option>BFP Zamboanga City Station</option>
-              </select>
-              {errors.substation && (
-                <span className="error-message">{errors.substation}</span>
-              )}
-            </div>
 
             <div className="auth-group">
               <label>ID Number</label>

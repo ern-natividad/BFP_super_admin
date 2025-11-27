@@ -49,7 +49,7 @@
 }
 
 .officer-search-input:focus {
-  border-color: #ff7a00;
+  border-color: #B22222;
 }
 
 
@@ -86,7 +86,7 @@
 }
 
 .officer-filter-input:focus {
-  border-color: #ff7a00;
+  border-color: #B22222;
 }
 
 
@@ -99,7 +99,7 @@
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
-  border: 2px solid #ff7a00; /* same theme orange */
+  border: 2px solid #B22222; /* same theme orange */
 }
 
 
@@ -112,7 +112,7 @@
 
 /* TABLE HEADER */
 .officer-table-card thead th {
-  background: linear-gradient(to right, #ff5500, #ff7a00);
+  background: linear-gradient(to right, #B22222, #dd2c2c);
   color: white;
   padding: 14px;
   font-size: 15px;

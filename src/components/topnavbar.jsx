@@ -44,23 +44,6 @@ export default function Topnavbar() {
 
   return (
     <header className="topnav">
-      <div className="topnav-left">
-        <h2 className="topnav-title">BFP Station Status</h2>
-
-        <div className={`status-chip ${getStatusClass()} ${isNotReady ? 'not-updated' : ''}`}>
-          <span className="status-dot"></span>
-          <span className="status-text">{stationStatus}</span>
-          <span className="readiness-percentage">{readinessPercentage}%</span>
-          {isNotReady && <span className="warning-text">⚠️</span>}
-        </div>
-
-        {isNotReady && (
-          <div className="status-warning">
-            <span>Checklist not updated - Station not ready</span>
-          </div>
-        )}
-      </div>
-
       <div className="topnav-right">
         
         <div className="notif-wrapper" ref={notifRef}>
@@ -113,8 +96,3 @@ export default function Topnavbar() {
     </header>
   );
 }
-
-
-
-
-

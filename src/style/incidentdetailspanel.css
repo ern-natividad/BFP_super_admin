@@ -65,7 +65,7 @@
 }
 
 .idp-close:hover {
-  background: #ff5a24;
+  background: #B22222;
   color: white;
   transform: rotate(90deg);
   box-shadow: 0 4px 12px rgba(255, 90, 36, 0.3);
@@ -166,8 +166,8 @@
 .timeline-time { font-size: 12px; color:#999; margin-top:4px; }
 
 /* custom dot colors by status */
-.timeline-item.pending .timeline-dot { border-color: #f6c67a; }
-.timeline-item.dispatch-on-the-way .timeline-dot { border-color: #ff9f43; }
+.timeline-item.pending .timeline-dot { border-color: #eb7878; }
+.timeline-item.dispatch-on-the-way .timeline-dot { border-color: #B22222; }
 .timeline-item.ongoing-response .timeline-dot { border-color: #3aa0ff; }
 .timeline-item.fire-under-control .timeline-dot { border-color: #ffb84d; }
 .timeline-item.resolved .timeline-dot { border-color: #2ecc71; }
@@ -198,7 +198,7 @@
   margin-left: 10px;
 }
 .idp-btn-gray { background:#f3f3f3; color:#333; margin-right:8px; }
-.idp-btn-apply { background: linear-gradient(90deg,#ff7a00,#c63600); color:white; }
+.idp-btn-apply { background: linear-gradient(90deg,#B22222,#dd2c2c); color:white; }
 .idp-btn-close { background: #fff; border:1px solid #ddd; color:#333; }
 
 @media (max-width: 900px) {

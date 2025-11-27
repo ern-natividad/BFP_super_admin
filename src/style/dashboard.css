@@ -105,7 +105,7 @@
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #ff8a40, #ff5a24);
+  background: linear-gradient(135deg, #ff3a3a, #B22222);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +199,7 @@
 }
 
 .search-input:focus {
-  border-color: #ff6a2e;
+  border-color: #B22222;
   box-shadow: 0 0 0 3px rgba(255, 106, 46, 0.1);
   width: 180px;
   background: #fff;
@@ -426,84 +426,6 @@
 .bar:nth-child(6) { animation-delay: 0.6s; }
 .bar:nth-child(7) { animation-delay: 0.7s; }
 
-/* Severity Chart */
-.chart-legend {
-  display: flex;
-  gap: 15px;
-  font-size: 12px;
-}
-
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  color: #666;
-}
-
-.legend-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-.legend-dot.critical { background: #dc3545; }
-.legend-dot.high { background: #ff7b00; }
-.legend-dot.medium { background: #ffc107; }
-
-.severity-chart {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.severity-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.severity-bar {
-  height: 24px;
-  border-radius: 12px;
-  min-width: 40px;
-  position: relative;
-  overflow: hidden;
-}
-
-.severity-item.critical .severity-bar {
-  background: linear-gradient(135deg, #dc3545, #c82333);
-}
-
-.severity-item.high .severity-bar {
-  background: linear-gradient(135deg, #ff7b00, #ff5a24);
-}
-
-.severity-item.medium .severity-bar {
-  background: linear-gradient(135deg, #ffc107, #e0a800);
-}
-
-.severity-label {
-  font-size: 13px;
-  color: #666;
-  font-weight: 500;
-}
-
-.severity-bar::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-  animation: shimmerBar 2s ease-in-out infinite;
-}
-
-@keyframes shimmerBar {
-  0% { left: -100%; }
-  100% { left: 100%; }
-}
-
 /* ============================
    ENHANCED RECENT CALLS
 ============================ */
@@ -612,7 +534,7 @@
 .call-item:hover {
   transform: translateX(8px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border-color: #ff7b00;
+  border-color: #f02929;
 }
 
 .call-content {
@@ -805,6 +727,14 @@
 
 .stats-grid .stat-card:nth-child(3) {
   border: 2px solid #ffb800; 
+}
+
+.stats-grid .stat-card:nth-child(4) {
+  border: 2px solid #ff0055; 
+}
+
+.stats-grid .stat-card:nth-child(5) {
+  border: 2px solid #c40000; 
 }
 
 

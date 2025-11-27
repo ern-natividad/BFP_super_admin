@@ -84,16 +84,23 @@ export default function EmergencyCallHistory() {
     <div className="call-page">
       <h1 className="call-title">Emergency Call History</h1>
 
-      {/* SEARCH BAR */}
-      <div className="call-search-row">
-        <div className="call-search-wrapper">
-          <span className="call-search-icon">🔍</span>
-          <input
-            className="call-search-input"
-            placeholder="Search Caller Name or Number..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+      {/* SEARCH + FILTERS */}
+      <div className="officer-search-card">
+
+        {/* SEARCH */}
+        <input
+          type="text"
+          placeholder="Search Officer Name..."
+          className="officer-search-input"
+        />
+
+        {/* FILTERS */}
+        <div className="officer-filters">
+
+          <div className="officer-filter-group">
+            <label>Date</label>
+            <input type="date" className="officer-filter-input" />
+          </div>
         </div>
       </div>
 

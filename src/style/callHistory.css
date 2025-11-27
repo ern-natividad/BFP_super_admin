@@ -61,7 +61,7 @@
 }
 
 .call-search-input:focus {
-  border-color: #ff7a00;
+  border-color: #B22222;
 }
 
 /* FILTERS */
@@ -92,7 +92,7 @@
 }
 
 .call-filter-input:focus {
-  border-color: #ff7a00;
+  border-color: #B22222;
 }
 
 /* -------------------------------------- */
@@ -102,7 +102,7 @@
   background: #fff;
   border-radius: 14px;
   overflow: hidden;
-  border: 2px solid #ff7a00;
+  border: 2px solid #B22222;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
@@ -112,7 +112,7 @@
 }
 
 .call-table-card thead th {
-  background: linear-gradient(to right, #c63600, #ff7a00);
+  background: linear-gradient(to right, #B22222, #dd2c2c);
   color: #fff;
   padding: 14px;
   font-size: 15px;
@@ -230,7 +230,7 @@
 
 .call-view-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 123, 0, 0.3);
+  box-shadow: 0 4px 12px #B222224d;
 }
 
 .call-view-btn:active {
@@ -253,7 +253,7 @@
 }
 
 .call-details-btn {
-  background: #ff7a00;
+  background: #B22222;
   color: #fff;
   padding: 8px 14px;
   border: none;
@@ -264,7 +264,7 @@
 }
 
 .call-details-btn:hover {
-  background: #d66200;
+  background: #B22222;
 }
 
 /* -------------------------------------- */

@@ -185,7 +185,7 @@ export default function Signup() {
                 )}
               </div>
             </div>
-
+            
             <div className="auth-row">
               <div className="auth-group">
                 <label>ID Number</label>
@@ -203,25 +203,7 @@ export default function Signup() {
                 )}
               </div>
 
-              <div className="auth-group">
-                <label>BFP Substation</label>
-                <select 
-                  name="substation"
-                  value={formData.substation}
-                  onChange={handleInputChange}
-                  required 
-                  className={errors.substation ? "error" : ""}
-                >
-                  <option value="">Select Substation</option>
-                  <option>BFP Zamboanga City Station</option>
-                </select>
-                {errors.substation && (
-                  <span className="error-message">{errors.substation}</span>
-                )}
-              </div>
-            </div>
-
-            <div className="auth-row">
+              <div className="auth-row">
               <div className="auth-group">
                 <label>Rank</label>
                 <input 
@@ -237,6 +219,7 @@ export default function Signup() {
                   <span className="error-message">{errors.rank}</span>
                 )}
               </div>
+            </div>
             </div>
 
             <div className="auth-row">
