@@ -66,13 +66,13 @@
 
 .settings-nav-item:hover {
   background: #f8f9fa;
-  color: #ff7b00;
+  color: #B22222;
 }
 
 .settings-nav-item.active {
-  background: linear-gradient(135deg, rgba(255, 123, 0, 0.1), rgba(255, 90, 36, 0.1));
-  color: #ff7b00;
-  border-left: 4px solid #ff7b00;
+  background: linear-gradient(135deg, #e22f2f1a, #B222221a);
+  color: #B22222;
+  border-left: 4px solid #B22222;
 }
 
 .settings-nav-item i {
@@ -148,7 +148,7 @@
 
 .form-group input:hover,
 .form-group select:hover {
-  border-color: #ff9d4d;
+  border-color: #B22222;
 }
 
 /* Buttons */
@@ -195,12 +195,12 @@
 
 .btn-outline {
   background: transparent;
-  border: 2px solid #ff7b00;
-  color: #ff7b00;
+  border: 2px solid #B22222;
+  color: #B22222;
 }
 
 .btn-outline:hover {
-  background: #ff7b00;
+  background: #B22222;
   color: white;
   transform: translateY(-1px);
 }
@@ -276,7 +276,7 @@
 }
 
 input:checked + .toggle-slider {
-  background: linear-gradient(135deg, #ff7b00, #ff5a24);
+  background: linear-gradient(135deg, #e22d2d, #B22222);
 }
 
 input:checked + .toggle-slider:before {
@@ -429,7 +429,7 @@ input:checked + .toggle-slider:before {
 
 .system-btn i {
   font-size: 18px;
-  color: #ff7b00;
+  color: #B22222;
 }
 
 .system-info {

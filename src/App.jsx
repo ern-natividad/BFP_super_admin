@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
+import Login from "./pages/login";
+import Signup from "./pages/signup";
+
 import Sidebar from "./components/sidenavbar";
 import Topnavbar from "./components/topnavbar";
 import Dashboard from "./pages/dashboard";
@@ -20,7 +23,10 @@ import "./layout.css";
 
 function AppContent() {
   const location = useLocation();
+
+  // pages without layout
   const noLayoutRoutes = ["/login", "/signup"];
+
   const hideLayout = noLayoutRoutes.includes(location.pathname);
 
   // ==== Call states ====
@@ -59,8 +65,8 @@ function AppContent() {
     <>
       {hideLayout ? (
         <Routes>
-          <Route path="/login" element={<div>Login Page</div>} />
-          <Route path="/signup" element={<div>Signup Page</div>} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       ) : (
         <div className="app-layout">
