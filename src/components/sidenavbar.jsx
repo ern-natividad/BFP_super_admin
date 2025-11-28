@@ -47,6 +47,10 @@ export default function Sidebar() {
           <i class="fa-solid fa-square-check"></i> Station Status
         </NavLink>
 
+        <NavLink to="/content-management" className="nav-item">
+          <i className="fa-solid fa-layer-group"></i> Content Management
+        </NavLink>
+
         <hr />
 
         <NavLink to="/settings" className="nav-item">

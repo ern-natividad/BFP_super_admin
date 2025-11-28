@@ -12,6 +12,7 @@ import EmergencyCallHistory from "./pages/emergencycallHistory";
 import Officers from "./pages/officersLoginHistory";
 import IncidentReport from "./pages/IncidentReport";
 import BranchStatus from "./pages/branchstatus";
+import ContentManagement from "./pages/ContentManagement";
 import Settings from "./pages/Settings";
 import TestPage from "./pages/TestPage";
 
@@ -82,6 +83,7 @@ function AppContent() {
                 <Route path="/officers" element={<Officers />} />
                 <Route path="/incident-report" element={<IncidentReport />} />
                 <Route path="/branch-status" element={<BranchStatus />} />
+                <Route path="/content-management" element={<ContentManagement />} />
                 <Route path="/settings" element={<Settings />} />
                 <Route path="/test" element={<TestPage />} />
               </Routes>
